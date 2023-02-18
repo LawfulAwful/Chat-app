@@ -1,5 +1,10 @@
-"scripts": {
-    "start": "node dist/index.js",
-    "build": "tsc",
-    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
-},
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "strict": true
+  },
+  "include": ["src/**/*"]
+}
